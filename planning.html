@@ -1,0 +1,27 @@
+
+<head>
+  <title>planning</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+</body>
+
+<template name="ApplicationLayout">
+  {{> yield}}
+</template>
+
+<template name="Grid">
+  <h1><input type='text' placeholder='title' class='title' value=''></h1>
+  <button class="btn btn-primary" name="add">+</button>
+  <div id="load">
+    <button class="btn btn-seconday" name="save">{{save}}</button>
+  </div>
+  <section class="gridArea">
+    <div class="gridster">
+      <ul>
+      </ul>
+    </div>
+  </section>
+</template>
